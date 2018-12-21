@@ -31,11 +31,11 @@ uint32_t   USART2_BodRate;
 //   GetAcc.h		
 //-----------------------------------------
 
-//uint8_t  BMI055A_Rx[6];	   //接收加速度计原始数据
+//uint8_t  BMI055A_Rx[6];	   //接收加速度计原始数�?
 uint8_t  BMI160A_Rx[6];
-int16_t	 ACC_X;			       //加速度计X轴数据
-int16_t  ACC_Y;			       //加速度计Y轴数据
-int16_t  ACC_Z;			       //加速度计Z轴数据
+int16_t	 ACC_X;			       //加速度计X轴数�?
+int16_t  ACC_Y;			       //加速度计Y轴数�?
+int16_t  ACC_Z;			       //加速度计Z轴数�?
 
 //-----------------------------------------
 int16_t XAccBias;
@@ -62,8 +62,8 @@ int16_t  intPitchAcc;		   //
 int16_t  intRollAcc;			 //
 int16_t  intAliAcc;			   //
 
-int16_t  intPitchAngle;	   //基于加速度计的俯仰角
-int16_t  intRollAngle;	   //基于加速度计的横滚角
+int16_t  intPitchAngle;	   //基于加速度计的俯仰�?
+int16_t  intRollAngle;	   //基于加速度计的横滚�?
 int16_t  intYawAngle;      //基于角速度的航向角
 
 //-----------------------------------------
@@ -73,25 +73,25 @@ int16_t  intYawAngle;      //基于角速度的航向角
 uint8_t BMI160G_Rx[6];
 
 
-int16_t  Gyr_X;			      //陀螺仪X轴数据
-int16_t  Gyr_Y;			      //陀螺仪Y轴数据
-int16_t  Gyr_Z;			      //陀螺仪Z轴数据
+int16_t  Gyr_X;			      //陀螺仪X轴数�?
+int16_t  Gyr_Y;			      //陀螺仪Y轴数�?
+int16_t  Gyr_Z;			      //陀螺仪Z轴数�?
 
 int16_t  GyrBias_X;       // 陀螺仪的俯仰轴偏置实时变量   
 int16_t  GyrBias_Y;       // 陀螺仪的俯仰轴偏置实时变量   
 int16_t  GyrBias_Z;       // 陀螺仪的俯仰轴偏置实时变量
 
-int16_t  GyrScale_X;      // 陀螺仪的X轴标称因子  store
-int16_t  GyrScale_Y;      // 陀螺仪的Y轴标称因子  store
-int16_t  GyrScale_Z;      // 陀螺仪的Z轴标称因子  store 
+int16_t  GyrScale_X;      // 陀螺仪的X轴标称因�? store
+int16_t  GyrScale_Y;      // 陀螺仪的Y轴标称因�? store
+int16_t  GyrScale_Z;      // 陀螺仪的Z轴标称因�? store 
 
 int16_t  XGyrBias;        // 陀螺仪的俯仰轴偏置   store
 int16_t  YGyrBias;        // 陀螺仪的俯仰轴偏置   store
 int16_t  ZGyrBias;        // 陀螺仪的俯仰轴偏置   store
 
-int16_t  XGyrScale;       // 陀螺仪的X轴标称因子  store
-int16_t  YGyrScale;       // 陀螺仪的Y轴标称因子  store
-int16_t  ZGyrScale;       // 陀螺仪的Z轴标称因子  store 
+int16_t  XGyrScale;       // 陀螺仪的X轴标称因�? store
+int16_t  YGyrScale;       // 陀螺仪的Y轴标称因�? store
+int16_t  ZGyrScale;       // 陀螺仪的Z轴标称因�? store 
 
 float  floPitchGyr;		  //???棗X
 float  floRollGyr;		  //???棗Y
@@ -131,8 +131,8 @@ uint8_t   BaseTime;        //
 uint8_t   DetaTime;        //
 
 uint8_t   SaveTime;        //后期数组索引....
-uint8_t   SendTime;        //SendTime和SaveTime之间需要比较，所以一定注意不要随便修改....
-uint8_t   PackTime;        //PackTime和SaveTime之间需要比较，所以一定注意不要随便修改....
+uint8_t   SendTime;        //SendTime和SaveTime之间需要比较，所以一定注意不要随便修�?...
+uint8_t   PackTime;        //PackTime和SaveTime之间需要比较，所以一定注意不要随便修�?...
 
 uint8_t   IMU_Send_Flag;
 
@@ -141,8 +141,8 @@ uint16_t  IMU_DMA_Num;
 uint16_t  IMDMStime;
 
 uint8_t   IMDHour;						//	 UTC时间：时
-uint8_t   IMDMinute;					//	 分
-uint8_t   IMDSecond;					//	 秒
+uint8_t   IMDMinute;					//	 �?
+uint8_t   IMDSecond;					//	 �?
 uint8_t   IMDMSecond;        //   毫秒
 
 uint8_t   IMU_Flag;          //
@@ -153,7 +153,7 @@ uint16_t   T2times;
 uint16_t   T3times;
 
 uint8_t    Change_Data[50];
-uint8_t    IMU_Num;           //读取IMU数据的次数
+uint8_t    IMU_Num;           //读取IMU数据的次�?
 //-------------------------------------------
 //   GetGps.h
 //-------------------------------------------
@@ -237,11 +237,11 @@ uint8_t   GGA_Data[20];
 uint8_t   GGB_Data[8];        
 uint8_t   GGS_Data[15];  
 
-uint8_t   IMU_Send_OK;   //IMU数据发送完毕
-uint8_t   GPS_Send_OK;   //GPS原始数据发送完毕
-uint8_t   GNSS_Send_OK;  //组合导航数据发送完毕
-uint8_t   GSA_Send_OK;   //GSA原始数据发送完毕
-uint8_t   ATT_Send_OK;   //ATT原始数据发送完毕
+uint8_t   IMU_Send_OK;   //IMU数据发送完�?
+uint8_t   GPS_Send_OK;   //GPS原始数据发送完�?
+uint8_t   GNSS_Send_OK;  //组合导航数据发送完�?
+uint8_t   GSA_Send_OK;   //GSA原始数据发送完�?
+uint8_t   ATT_Send_OK;   //ATT原始数据发送完�?
 
 uint8_t   GNSS_Send_OK_Flag;
 
@@ -271,8 +271,8 @@ uint8_t  Gnss_Up_Flag;         //
 //-----------------------------------------------------------------
 // "commdata.h"
 //-----------------------------------------------------------------
-uint8_t   TDM_TX_Data[400];	 //发送数组  最长GGA+RMC
-uint8_t   TDM_Rx_Data[60];	 //接收组数  最长加速度计
+uint8_t   TDM_TX_Data[400];	 //发送数�? 最长GGA+RMC
+uint8_t   TDM_Rx_Data[60];	 //接收组数  最长加速度�?
 
 uint8_t   High_DGet_Flag;       //频率设置参数
 uint8_t   Buat_DGet_Flag;       //速率设置参数
@@ -299,16 +299,16 @@ uint8_t    RSE_SGet_Flag;        //重新搜索
 double     Lat_Back;             //经度
 double     Lon_Back;             //维度
 
-int16_t     Pitch_Back;           //俯仰角
-int16_t     Roll_Back;            //横滚角
-int16_t     Head_Back;            //方向角
+int16_t     Pitch_Back;           //俯仰�?
+int16_t     Roll_Back;            //横滚�?
+int16_t     Head_Back;            //方向�?
 
 uint8_t     NorthSouthBack;       //
 uint8_t     WestEastBack;         //
 
 
 uint8_t     ANG_Lock_Flag;        //锁定
-uint8_t     ANG_Kind_Flag;        //状态：0:自适应版本 1：固定版本
+uint8_t     ANG_Kind_Flag;        //状态：0:自适应版本 1：固定版�?
 
 uint8_t     RSE_FGet_Flag;        //重新搜索角度
 uint8_t     POS_First_Flag;       //
@@ -330,7 +330,7 @@ uint8_t    Uart_Kind;           //
 uint8_t    User_Kind;           //用户类型
 
 uint8_t   Debug_Flag;          //调试....
-uint8_t   Up_On_Flag;          //软件版本号  1.01版            //Store    Command_Sort:0A
+uint8_t   Up_On_Flag;          //软件版本�? 1.01�?           //Store    Command_Sort:0A
 uint8_t   Data_Sort;		       //数据类型
 
 
@@ -354,7 +354,7 @@ uint8_t   Command_Tx_Max;	   //发送的最大字节个数；
 uint8_t   Command_Rx_Max;	   //接受的最大字节个数；
 
 uint8_t   Comm_Sort;		       //命令类型
-uint8_t   Data_Com_Flag;      //1--数据，2--命令
+uint8_t   Data_Com_Flag;      //1--数据�?--命令
 
 uint8_t   AHRSComFlag;		     //
 uint8_t   COM_Flag;		       //串口发送标志位
@@ -367,10 +367,10 @@ uint8_t   CPU_ID_Data[25];
 //-----------------------------------------------------------------
 //"stmflash.h"
 //-----------------------------------------------------------------
-uint8_t  Flash_Wing_Flag;     //Flash写入标志位
+uint8_t  Flash_Wing_Flag;     //Flash写入标志�?
 uint8_t  Flash_Wirte_Flag; 
 
-uint8_t   Data_Flash_W_Flag;   //标志位----启动系统参数写入
+uint8_t   Data_Flash_W_Flag;   //标志�?---启动系统参数写入
 
 uint8_t   Update_One;
 uint8_t   Update_Two;
@@ -378,11 +378,11 @@ uint8_t   Update_Two;
 uint8_t   Update_Flash_W_Flag;
 uint8_t   MAngle_Flash_W_Flag;
 
-uint16_t  SVersionH;           // 软件版本号 年份
-uint16_t  SVersionL;           // 软件版本号 月份
-uint16_t  HVersionH;           // 硬件版本号 年份
-uint16_t  HVersionL;           // 硬件版本号 月份
-uint16_t  HVersionS;           // 硬件版本号 序号
+uint16_t  SVersionH;           // 软件版本�?年份
+uint16_t  SVersionL;           // 软件版本�?月份
+uint16_t  HVersionH;           // 硬件版本�?年份
+uint16_t  HVersionL;           // 硬件版本�?月份
+uint16_t  HVersionS;           // 硬件版本�?序号
 
 uint8_t  Flash_Rdata[150];	   //切记，是存储数据个数的四倍！因为需要变换为uint32
 uint8_t  Flash_Wdata[150];
@@ -421,12 +421,12 @@ GNSS_DATA_T   GNSSDataBuffer;  //gty GPS所有指针均指向该地址....
 PIMU_DATA_T   pImuData;        //gty 指针IMU....
 PGNSS_DATA_T  pGnssData;       //gty 指针GPS....
 
-OUTPUT_INFO_T GINavResult;     //gty 组合导航输出的所有信息
+OUTPUT_INFO_T GINavResult;     //gty 组合导航输出的所有信�?
 
 GSAV_DATA_T   g_GsavInfo;       //Gty  获得GSA,GSV信息....
 
-BOOL IMUDataReady;             //gty IMU数据是否准备好，如果准备好，每次用完，清零
-BOOL GNSSDataReady;            //gty GNSS数据是否准备好，如果准备好，每次用完，清零
+BOOL IMUDataReady;             //gty IMU数据是否准备好，如果准备好，每次用完，清�?
+BOOL GNSSDataReady;            //gty GNSS数据是否准备好，如果准备好，每次用完，清�?
 
 BOOL GNSSDataGetFlag;          //gty 用于数据同步
 BOOL IMUDataGetFlag;           //gty 用于数据同步  
@@ -444,7 +444,7 @@ void Data_Synch(void);
 void ApluCode(void);
 
 extern unsigned char alpuc_process(unsigned char *, unsigned char *);
-//测试PPS用-----------------------------------------
+//测试PPS�?----------------------------------------
 int time1;
 int time0;
 
@@ -463,7 +463,7 @@ const u8 TEXT_Buffer[]={0x12,0x13,0x14,0x15,0x16,0x22,0x17,0x18,0x19,0x1A};
 #define SIZE sizeof(TEXT_Buffer)
 u8 datatemp[20];
 u8 testcheck=0;
-//test-------------------------------------------------------------------------------------------------
+//tes source insight--------------------
 int main(void)
 {
 	NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x10000);		   //20140524
@@ -494,19 +494,19 @@ int main(void)
 
 	
 	if(User_Kind!=5)
-	SendVersion();          // 发送版本..	
+	SendVersion();          // 发送版�?.	
 		
-	Acc_Ini();              // 加速度计
+	Acc_Ini();              // 加速度�?
 	Gyr_Ini();              // 陀螺仪
 	
 	//BMI055A_Ini();		      //加速度计初始化
-	//BMI055G_Ini();		      //陀螺仪初始化
+	//BMI055G_Ini();		      //陀螺仪初始�?
 	
-	//BMI160测试初始化
+	//BMI160测试初始�?
 	BMI160_Ini();	
 	delay_ms(10);
 		
-	GINavInit();            //组合导航初始化...
+	GINavInit();            //组合导航初始�?..
 		
 	NVIC_Configuration();		// NVIC配置
 	
@@ -515,14 +515,14 @@ int main(void)
 	GpsConfig2();	
 	
  //------------------------------------------------	
- //	IWDG_Init(4,2000);	    // 设置1S看门狗
+ //	IWDG_Init(4,2000);	    // 设置1S看门�?
 	
 	DIni_Flag=1;
 	
-	//低功耗-----------------------
-	Interrupt_Any_motion();	//检测运动
+	//低功�?----------------------
+	Interrupt_Any_motion();	//检测运�?
 	
-	//EEPROM测试写--------------------------------
+	//EEPROM测试�?-------------------------------
 	 while( EEPROM_Check()!=0){};//检测EEROM连接成功
    EEPROM_Write(0,(u8*)TEXT_Buffer,SIZE);
 		 
@@ -532,13 +532,13 @@ int main(void)
 		if(Lowpow_Sleep==1)//发送log sleep复位
 		{
 			  Lowpow_Sleep=0;
-			  __set_FAULTMASK(1);      // 关闭所有中断
+			  __set_FAULTMASK(1);      // 关闭所有中�?
 				NVIC_SystemReset();      // 复位	
 		}
-		if(Lowpow_Flag)//串口命令log lowpo进入低功耗
+		if(Lowpow_Flag)//串口命令log lowpo进入低功�?
 		{
 			 Lowpow_Flag = 0;
-			 //stop mode-----------------------模式二 PA0 160的INT1唤醒
+			 //stop mode-----------------------模式�?PA0 160的INT1唤醒
 			 if(Choose_Lowpow_Flag==2)
        {
 				 
@@ -548,7 +548,7 @@ int main(void)
 				 __nop();
 				 __nop();
 		   } 
-			 //Standby mode--------------------模式三
+			 //Standby mode--------------------模式�?
 			 else if(Choose_Lowpow_Flag==3)
 			 {   
 					// GPIO_SetBits(GPIOA,GPIO_Pin_15);//关UBLOX
@@ -566,7 +566,7 @@ int main(void)
 		 
 		//160测试-------------------------------------OK
 //		Get_BMI160G_Data();	//1-获得陀螺仪数据
-//		Get_Rate_Data();    //1-获得基于陀螺仪的角度信息。
+//		Get_Rate_Data();    //1-获得基于陀螺仪的角度信息�?
 //		Get_Yaw_Data();     //1-获得基于陀螺仪的姿态数值；	
 
 //		Get_BMI160A_Data();//2-获得加速度数据
@@ -608,23 +608,23 @@ void Data_Ini(void)
 	//****************************************************************************************
 	DIni_Flag=0;
 	//------------------------------------------------------
-	//   一般用户  9600   1HZ   GGA,RMC GSA GSV
+	//   一般用�? 9600   1HZ   GGA,RMC GSA GSV
 	//------------------------------------------------------
-	//注意flash默认设置,这里的设置没有用！
-	IMU_Kind     = 2;             //1: 天星北斗          2: 1216模块  X轴朝后...(天工MTK版本)  3:XXX            4：           5：1216模块 X轴朝前...  6:1点（超前+右上）澳门  7：Gmouse(创鑫电) 8：3反装（大唐）
-	User_Kind    = 7;             //1: 普通客户          2：元征	                             3:华途           4:鹰瞰        5: 力浪                 6: 北京客户             7: 天工测试       8：星云互联      9:邵总
+	//注意flash默认设置,这里的设置没有用�?
+	IMU_Kind     = 2;             //1: 天星北斗          2: 1216模块  X轴朝�?..(天工MTK版本)  3:XXX            4�?          5�?216模块 X轴朝�?..  6:1点（超前+右上）澳�? 7：Gmouse(创鑫�? 8�?反装（大唐）
+	User_Kind    = 7;             //1: 普通客�?         2：元�?                             3:华�?          4:鹰瞰        5: 力浪                 6: 北京客户             7: 天工测试       8：星云互�?     9:邵�?
 
-	Debug_Flag   = 0;	            //0：工作状态          1：调试状态  115200			
+	Debug_Flag   = 0;	            //0：工作状�?         1：调试状�? 115200			
 
 	GpsKind      = 1;             //1: Ulbox             2: Mtk
 	ProductKind  = 1;             //1: 模块              2：Gmosue
 	
 	//****************************************************************************************
 		
-	Uart_Kind   = 2;              //1:Uart1->接收GPS Uart2->用户  2：反之
+	Uart_Kind   = 2;              //1:Uart1->接收GPS Uart2->用户  2：反�?
 	
-	Up_On_Flag  = 0;              //0: 导航协议                   1：调试协议	
-	Gps_Fren_Kind  = 1;           //5: 默认5hz...一旦发现5HZ输入，则Sim_Mode=0....转换为根据GPS驱动.....
+	Up_On_Flag  = 0;              //0: 导航协议                   1：调试协�?
+	Gps_Fren_Kind  = 1;           //5: 默认5hz...一旦发�?HZ输入，则Sim_Mode=0....转换为根据GPS驱动.....
 	//--------------------------------------
 	//---------------------------------------
   
@@ -632,7 +632,7 @@ void Data_Ini(void)
 	
 	BaseTime=10;                   //INS=10hz,BaseTime=20;  INS=20hz,BaseTime=10ms
 	
-	DetaTime=1000/5/BaseTime;     //阈值 默认55HZ输入，则5s->20......
+	DetaTime=1000/5/BaseTime;     //阈�?默认55HZ输入，则5s->20......
 	
 //----------------------
   USART2_BodRate=115200;
